@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC47B15922943F69007E291E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC47B15822943F69007E291E /* AppDelegate.swift */; };
+		DC47B15B22943F69007E291E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC47B15A22943F69007E291E /* ViewController.swift */; };
+		DC47B15E22943F69007E291E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC47B15C22943F69007E291E /* Main.storyboard */; };
+		DC47B16022943F69007E291E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC47B15F22943F69007E291E /* Assets.xcassets */; };
+		DC47B16322943F69007E291E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC47B16122943F69007E291E /* LaunchScreen.storyboard */; };
+		DC47B16E22943F69007E291E /* DriveEyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC47B16D22943F69007E291E /* DriveEyeTests.swift */; };
+		DC47B17922943F69007E291E /* DriveEyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC47B17822943F69007E291E /* DriveEyeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC47B16A22943F69007E291E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC47B14D22943F69007E291E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC47B15422943F69007E291E;
+			remoteInfo = DriveEye;
+		};
+		DC47B17522943F69007E291E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC47B14D22943F69007E291E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC47B15422943F69007E291E;
+			remoteInfo = DriveEye;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC47B15522943F69007E291E /* DriveEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DriveEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC47B15822943F69007E291E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC47B15A22943F69007E291E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC47B15D22943F69007E291E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC47B15F22943F69007E291E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC47B16222943F69007E291E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC47B16422943F69007E291E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC47B16922943F69007E291E /* DriveEyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DriveEyeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC47B16D22943F69007E291E /* DriveEyeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveEyeTests.swift; sourceTree = "<group>"; };
+		DC47B16F22943F69007E291E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC47B17422943F69007E291E /* DriveEyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DriveEyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC47B17822943F69007E291E /* DriveEyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveEyeUITests.swift; sourceTree = "<group>"; };
+		DC47B17A22943F69007E291E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC47B15222943F69007E291E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC47B16622943F69007E291E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC47B17122943F69007E291E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC47B14C22943F69007E291E = {
+			isa = PBXGroup;
+			children = (
+				DC47B15722943F69007E291E /* DriveEye */,
+				DC47B16C22943F69007E291E /* DriveEyeTests */,
+				DC47B17722943F69007E291E /* DriveEyeUITests */,
+				DC47B15622943F69007E291E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC47B15622943F69007E291E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC47B15522943F69007E291E /* DriveEye.app */,
+				DC47B16922943F69007E291E /* DriveEyeTests.xctest */,
+				DC47B17422943F69007E291E /* DriveEyeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC47B15722943F69007E291E /* DriveEye */ = {
+			isa = PBXGroup;
+			children = (
+				DC47B15822943F69007E291E /* AppDelegate.swift */,
+				DC47B15A22943F69007E291E /* ViewController.swift */,
+				DC47B15C22943F69007E291E /* Main.storyboard */,
+				DC47B15F22943F69007E291E /* Assets.xcassets */,
+				DC47B16122943F69007E291E /* LaunchScreen.storyboard */,
+				DC47B16422943F69007E291E /* Info.plist */,
+			);
+			path = DriveEye;
+			sourceTree = "<group>";
+		};
+		DC47B16C22943F69007E291E /* DriveEyeTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC47B16D22943F69007E291E /* DriveEyeTests.swift */,
+				DC47B16F22943F69007E291E /* Info.plist */,
+			);
+			path = DriveEyeTests;
+			sourceTree = "<group>";
+		};
+		DC47B17722943F69007E291E /* DriveEyeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC47B17822943F69007E291E /* DriveEyeUITests.swift */,
+				DC47B17A22943F69007E291E /* Info.plist */,
+			);
+			path = DriveEyeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC47B15422943F69007E291E /* DriveEye */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC47B17D22943F6A007E291E /* Build configuration list for PBXNativeTarget "DriveEye" */;
+			buildPhases = (
+				DC47B15122943F69007E291E /* Sources */,
+				DC47B15222943F69007E291E /* Frameworks */,
+				DC47B15322943F69007E291E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DriveEye;
+			productName = DriveEye;
+			productReference = DC47B15522943F69007E291E /* DriveEye.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC47B16822943F69007E291E /* DriveEyeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC47B18022943F6A007E291E /* Build configuration list for PBXNativeTarget "DriveEyeTests" */;
+			buildPhases = (
+				DC47B16522943F69007E291E /* Sources */,
+				DC47B16622943F69007E291E /* Frameworks */,
+				DC47B16722943F69007E291E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC47B16B22943F69007E291E /* PBXTargetDependency */,
+			);
+			name = DriveEyeTests;
+			productName = DriveEyeTests;
+			productReference = DC47B16922943F69007E291E /* DriveEyeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC47B17322943F69007E291E /* DriveEyeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC47B18322943F6A007E291E /* Build configuration list for PBXNativeTarget "DriveEyeUITests" */;
+			buildPhases = (
+				DC47B17022943F69007E291E /* Sources */,
+				DC47B17122943F69007E291E /* Frameworks */,
+				DC47B17222943F69007E291E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC47B17622943F69007E291E /* PBXTargetDependency */,
+			);
+			name = DriveEyeUITests;
+			productName = DriveEyeUITests;
+			productReference = DC47B17422943F69007E291E /* DriveEyeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC47B14D22943F69007E291E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = java;
+				TargetAttributes = {
+					DC47B15422943F69007E291E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					DC47B16822943F69007E291E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DC47B15422943F69007E291E;
+					};
+					DC47B17322943F69007E291E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DC47B15422943F69007E291E;
+					};
+				};
+			};
+			buildConfigurationList = DC47B15022943F69007E291E /* Build configuration list for PBXProject "DriveEye" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC47B14C22943F69007E291E;
+			productRefGroup = DC47B15622943F69007E291E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC47B15422943F69007E291E /* DriveEye */,
+				DC47B16822943F69007E291E /* DriveEyeTests */,
+				DC47B17322943F69007E291E /* DriveEyeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC47B15322943F69007E291E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC47B16322943F69007E291E /* LaunchScreen.storyboard in Resources */,
+				DC47B16022943F69007E291E /* Assets.xcassets in Resources */,
+				DC47B15E22943F69007E291E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC47B16722943F69007E291E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC47B17222943F69007E291E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC47B15122943F69007E291E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC47B15B22943F69007E291E /* ViewController.swift in Sources */,
+				DC47B15922943F69007E291E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC47B16522943F69007E291E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC47B16E22943F69007E291E /* DriveEyeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC47B17022943F69007E291E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC47B17922943F69007E291E /* DriveEyeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC47B16B22943F69007E291E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC47B15422943F69007E291E /* DriveEye */;
+			targetProxy = DC47B16A22943F69007E291E /* PBXContainerItemProxy */;
+		};
+		DC47B17622943F69007E291E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC47B15422943F69007E291E /* DriveEye */;
+			targetProxy = DC47B17522943F69007E291E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC47B15C22943F69007E291E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC47B15D22943F69007E291E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC47B16122943F69007E291E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC47B16222943F69007E291E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC47B17B22943F69007E291E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC47B17C22943F69007E291E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC47B17E22943F6A007E291E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DriveEye/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iti.jets.DriveEye;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC47B17F22943F6A007E291E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DriveEye/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iti.jets.DriveEye;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DC47B18122943F6A007E291E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DriveEyeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iti.jets.DriveEyeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DriveEye.app/DriveEye";
+			};
+			name = Debug;
+		};
+		DC47B18222943F6A007E291E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DriveEyeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iti.jets.DriveEyeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DriveEye.app/DriveEye";
+			};
+			name = Release;
+		};
+		DC47B18422943F6A007E291E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DriveEyeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iti.jets.DriveEyeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DriveEye;
+			};
+			name = Debug;
+		};
+		DC47B18522943F6A007E291E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DriveEyeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iti.jets.DriveEyeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DriveEye;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC47B15022943F69007E291E /* Build configuration list for PBXProject "DriveEye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC47B17B22943F69007E291E /* Debug */,
+				DC47B17C22943F69007E291E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC47B17D22943F6A007E291E /* Build configuration list for PBXNativeTarget "DriveEye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC47B17E22943F6A007E291E /* Debug */,
+				DC47B17F22943F6A007E291E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC47B18022943F6A007E291E /* Build configuration list for PBXNativeTarget "DriveEyeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC47B18122943F6A007E291E /* Debug */,
+				DC47B18222943F6A007E291E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC47B18322943F6A007E291E /* Build configuration list for PBXNativeTarget "DriveEyeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC47B18422943F6A007E291E /* Debug */,
+				DC47B18522943F6A007E291E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC47B14D22943F69007E291E /* Project object */;
+}
