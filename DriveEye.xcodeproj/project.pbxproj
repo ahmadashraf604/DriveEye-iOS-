@@ -14,6 +14,9 @@
 		DC47B16322943F69007E291E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC47B16122943F69007E291E /* LaunchScreen.storyboard */; };
 		DC47B16E22943F69007E291E /* DriveEyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC47B16D22943F69007E291E /* DriveEyeTests.swift */; };
 		DC47B17922943F69007E291E /* DriveEyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC47B17822943F69007E291E /* DriveEyeUITests.swift */; };
+		DCFE26C8229548F70043DB65 /* league.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCFE26C7229548F70043DB65 /* league.storyboard */; };
+		DCFE26CA22954EF60043DB65 /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFE26C922954EF60043DB65 /* LeagueModel.swift */; };
+		DCFE26CC22955F150043DB65 /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFE26CB22955F150043DB65 /* League.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		DC47B17422943F69007E291E /* DriveEyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DriveEyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC47B17822943F69007E291E /* DriveEyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveEyeUITests.swift; sourceTree = "<group>"; };
 		DC47B17A22943F69007E291E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCFE26C7229548F70043DB65 /* league.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = league.storyboard; sourceTree = "<group>"; };
+		DCFE26C922954EF60043DB65 /* LeagueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueModel.swift; sourceTree = "<group>"; };
+		DCFE26CB22955F150043DB65 /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,7 @@
 		DCFE26C3229543210043DB65 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DCFE26C7229548F70043DB65 /* league.storyboard */,
 				DC47B15C22943F69007E291E /* Main.storyboard */,
 			);
 			path = Views;
@@ -146,6 +153,7 @@
 		DCFE26C5229543440043DB65 /* pojo */ = {
 			isa = PBXGroup;
 			children = (
+				DCFE26CB22955F150043DB65 /* League.swift */,
 			);
 			path = pojo;
 			sourceTree = "<group>";
@@ -153,6 +161,7 @@
 		DCFE26C6229543520043DB65 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				DCFE26C922954EF60043DB65 /* LeagueModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -267,6 +276,7 @@
 				DC47B16322943F69007E291E /* LaunchScreen.storyboard in Resources */,
 				DC47B16022943F69007E291E /* Assets.xcassets in Resources */,
 				DC47B15E22943F69007E291E /* Main.storyboard in Resources */,
+				DCFE26C8229548F70043DB65 /* league.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +301,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCFE26CA22954EF60043DB65 /* LeagueModel.swift in Sources */,
 				DC47B15B22943F69007E291E /* ViewController.swift in Sources */,
+				DCFE26CC22955F150043DB65 /* League.swift in Sources */,
 				DC47B15922943F69007E291E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
