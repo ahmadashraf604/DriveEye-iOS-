@@ -97,9 +97,11 @@
 		DC47B15722943F69007E291E /* DriveEye */ = {
 			isa = PBXGroup;
 			children = (
+				DCFE26C6229543520043DB65 /* model */,
+				DCFE26C5229543440043DB65 /* pojo */,
+				DCFE26C4229543330043DB65 /* Controller */,
+				DCFE26C3229543210043DB65 /* Views */,
 				DC47B15822943F69007E291E /* AppDelegate.swift */,
-				DC47B15A22943F69007E291E /* ViewController.swift */,
-				DC47B15C22943F69007E291E /* Main.storyboard */,
 				DC47B15F22943F69007E291E /* Assets.xcassets */,
 				DC47B16122943F69007E291E /* LaunchScreen.storyboard */,
 				DC47B16422943F69007E291E /* Info.plist */,
@@ -123,6 +125,36 @@
 				DC47B17A22943F69007E291E /* Info.plist */,
 			);
 			path = DriveEyeUITests;
+			sourceTree = "<group>";
+		};
+		DCFE26C3229543210043DB65 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC47B15C22943F69007E291E /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DCFE26C4229543330043DB65 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DC47B15A22943F69007E291E /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DCFE26C5229543440043DB65 /* pojo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = pojo;
+			sourceTree = "<group>";
+		};
+		DCFE26C6229543520043DB65 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
