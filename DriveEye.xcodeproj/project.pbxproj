@@ -14,6 +14,7 @@
 		DC47B16322943F69007E291E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC47B16122943F69007E291E /* LaunchScreen.storyboard */; };
 		DC47B16E22943F69007E291E /* DriveEyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC47B16D22943F69007E291E /* DriveEyeTests.swift */; };
 		DC47B17922943F69007E291E /* DriveEyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC47B17822943F69007E291E /* DriveEyeUITests.swift */; };
+		DC606A1B22956864003AEBB7 /* Season.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC606A1A22956864003AEBB7 /* Season.storyboard */; };
 		DCFE26C8229548F70043DB65 /* league.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCFE26C7229548F70043DB65 /* league.storyboard */; };
 		DCFE26CA22954EF60043DB65 /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFE26C922954EF60043DB65 /* LeagueModel.swift */; };
 		DCFE26CC22955F150043DB65 /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFE26CB22955F150043DB65 /* League.swift */; };
@@ -50,6 +51,7 @@
 		DC47B17422943F69007E291E /* DriveEyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DriveEyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC47B17822943F69007E291E /* DriveEyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveEyeUITests.swift; sourceTree = "<group>"; };
 		DC47B17A22943F69007E291E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC606A1A22956864003AEBB7 /* Season.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Season.storyboard; sourceTree = "<group>"; };
 		DCFE26C7229548F70043DB65 /* league.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = league.storyboard; sourceTree = "<group>"; };
 		DCFE26C922954EF60043DB65 /* LeagueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueModel.swift; sourceTree = "<group>"; };
 		DCFE26CB22955F150043DB65 /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			children = (
 				DCFE26C7229548F70043DB65 /* league.storyboard */,
 				DC47B15C22943F69007E291E /* Main.storyboard */,
+				DC606A1A22956864003AEBB7 /* Season.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			files = (
 				DC47B16322943F69007E291E /* LaunchScreen.storyboard in Resources */,
 				DC47B16022943F69007E291E /* Assets.xcassets in Resources */,
+				DC606A1B22956864003AEBB7 /* Season.storyboard in Resources */,
 				DC47B15E22943F69007E291E /* Main.storyboard in Resources */,
 				DCFE26C8229548F70043DB65 /* league.storyboard in Resources */,
 			);
