@@ -23,7 +23,7 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>LoginAndRegistration</string>
+	<string>Coach</string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>UIRequiredDeviceCapabilities</key>
