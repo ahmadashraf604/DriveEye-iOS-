@@ -23,15 +23,7 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-<<<<<<< HEAD
-<<<<<<< HEAD
 	<string>Main</string>
-=======
-	<string>Coach</string>
->>>>>>> af035611d36b50be76ea8ef1a9820f3cb5d7e1d5
-=======
-	<string>Season</string>
->>>>>>> 3a3044d9684e8fe04bc9cb14a54738acfd68f39a
 	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>UIRequiredDeviceCapabilities</key>
