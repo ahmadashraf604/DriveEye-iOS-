@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LeagueActionVC: UIViewController {
+class LeagueActionVController: UIViewController {
 
     @IBAction func closeView(segue: UIStoryboardSegue) {
          print("IM BACK")
