@@ -8,7 +8,7 @@
 
 import Foundation
 class LeagueModel {
-    func getLeagues() -> League {
+    func getLeagues()  {
         
     }
 }

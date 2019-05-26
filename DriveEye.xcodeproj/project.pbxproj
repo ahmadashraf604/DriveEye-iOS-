@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC20BDC02296A57000C505B9 /* LeagueTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC20BDBF2296A57000C505B9 /* LeagueTVController.swift */; };
+		DC20BDC32296A85100C505B9 /* LeagueTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC20BDC22296A85100C505B9 /* LeagueTVCell.swift */; };
+		DC20BDC62296BE7900C505B9 /* LeagueDetailsVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC20BDC52296BE7900C505B9 /* LeagueDetailsVController.swift */; };
+		DC20BDC82296C6CF00C505B9 /* LeagueActionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC20BDC72296C6CF00C505B9 /* LeagueActionVC.swift */; };
 		DC47B15922943F69007E291E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC47B15822943F69007E291E /* AppDelegate.swift */; };
 		DC47B15B22943F69007E291E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC47B15A22943F69007E291E /* ViewController.swift */; };
 		DC47B15E22943F69007E291E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC47B15C22943F69007E291E /* Main.storyboard */; };
@@ -37,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC20BDBF2296A57000C505B9 /* LeagueTVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueTVController.swift; sourceTree = "<group>"; };
+		DC20BDC22296A85100C505B9 /* LeagueTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueTVCell.swift; sourceTree = "<group>"; };
+		DC20BDC52296BE7900C505B9 /* LeagueDetailsVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueDetailsVController.swift; sourceTree = "<group>"; };
+		DC20BDC72296C6CF00C505B9 /* LeagueActionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueActionVC.swift; sourceTree = "<group>"; };
 		DC47B15522943F69007E291E /* DriveEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DriveEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC47B15822943F69007E291E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC47B15A22943F69007E291E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +88,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC20BDC42296B07C00C505B9 /* leagueController */ = {
+			isa = PBXGroup;
+			children = (
+				DC20BDBF2296A57000C505B9 /* LeagueTVController.swift */,
+				DC20BDC22296A85100C505B9 /* LeagueTVCell.swift */,
+				DC20BDC52296BE7900C505B9 /* LeagueDetailsVController.swift */,
+				DC20BDC72296C6CF00C505B9 /* LeagueActionVC.swift */,
+			);
+			path = leagueController;
+			sourceTree = "<group>";
+		};
 		DC47B14C22943F69007E291E = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				DC47B15A22943F69007E291E /* ViewController.swift */,
+				DC20BDC42296B07C00C505B9 /* leagueController */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -302,9 +322,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCFE26CA22954EF60043DB65 /* LeagueModel.swift in Sources */,
+				DC20BDC82296C6CF00C505B9 /* LeagueActionVC.swift in Sources */,
 				DC47B15B22943F69007E291E /* ViewController.swift in Sources */,
+				DC20BDC62296BE7900C505B9 /* LeagueDetailsVController.swift in Sources */,
 				DCFE26CC22955F150043DB65 /* League.swift in Sources */,
 				DC47B15922943F69007E291E /* AppDelegate.swift in Sources */,
+				DC20BDC32296A85100C505B9 /* LeagueTVCell.swift in Sources */,
+				DC20BDC02296A57000C505B9 /* LeagueTVController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
