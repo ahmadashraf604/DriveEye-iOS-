@@ -7,10 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		DC20BDC02296A57000C505B9 /* LeagueTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC20BDBF2296A57000C505B9 /* LeagueTVController.swift */; };
 		DC20BDC32296A85100C505B9 /* LeagueTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC20BDC22296A85100C505B9 /* LeagueTVCell.swift */; };
 		DC20BDC62296BE7900C505B9 /* LeagueDetailsVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC20BDC52296BE7900C505B9 /* LeagueDetailsVController.swift */; };
 		DC20BDC82296C6CF00C505B9 /* LeagueActionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC20BDC72296C6CF00C505B9 /* LeagueActionVC.swift */; };
+=======
+		DC16ECAD22989690005A3DE5 /* Coach.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC16ECAC2298968F005A3DE5 /* Coach.storyboard */; };
+		DC16ECAF229896B1005A3DE5 /* CoachModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC16ECAE229896B1005A3DE5 /* CoachModel.swift */; };
+		DC16ECB2229896C7005A3DE5 /* CoachTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC16ECB0229896C7005A3DE5 /* CoachTVCell.swift */; };
+		DC16ECB3229896C7005A3DE5 /* CoachTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC16ECB1229896C7005A3DE5 /* CoachTVController.swift */; };
+		DC2CD91A229744DC0027BE34 /* CoachController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2CD919229744DC0027BE34 /* CoachController.swift */; };
+		DC2CD91D229745250027BE34 /* AlertServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2CD91C229745250027BE34 /* AlertServices.swift */; };
+>>>>>>> af035611d36b50be76ea8ef1a9820f3cb5d7e1d5
 		DC47B15922943F69007E291E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC47B15822943F69007E291E /* AppDelegate.swift */; };
 		DC47B15B22943F69007E291E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC47B15A22943F69007E291E /* ViewController.swift */; };
 		DC47B15E22943F69007E291E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC47B15C22943F69007E291E /* Main.storyboard */; };
@@ -18,6 +27,11 @@
 		DC47B16322943F69007E291E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC47B16122943F69007E291E /* LaunchScreen.storyboard */; };
 		DC47B16E22943F69007E291E /* DriveEyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC47B16D22943F69007E291E /* DriveEyeTests.swift */; };
 		DC47B17922943F69007E291E /* DriveEyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC47B17822943F69007E291E /* DriveEyeUITests.swift */; };
+		DC79D5192298120E00420167 /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC79D5182298120E00420167 /* AlertVC.swift */; };
+		DC92416122974D95000F6A51 /* AlertStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC92416022974D95000F6A51 /* AlertStoryboard.storyboard */; };
+		DCB00A70229577E500F476A3 /* LoginAndRegistration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB00A6F229577E500F476A3 /* LoginAndRegistration.storyboard */; };
+		DCB00A72229578B500F476A3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB00A71229578B500F476A3 /* LoginViewController.swift */; };
+		DCB00A772296D74900F476A3 /* UIButtonExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB00A762296D74900F476A3 /* UIButtonExtention.swift */; };
 		DCFE26C8229548F70043DB65 /* league.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCFE26C7229548F70043DB65 /* league.storyboard */; };
 		DCFE26CA22954EF60043DB65 /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFE26C922954EF60043DB65 /* LeagueModel.swift */; };
 		DCFE26CC22955F150043DB65 /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFE26CB22955F150043DB65 /* League.swift */; };
@@ -41,10 +55,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		DC20BDBF2296A57000C505B9 /* LeagueTVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueTVController.swift; sourceTree = "<group>"; };
 		DC20BDC22296A85100C505B9 /* LeagueTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueTVCell.swift; sourceTree = "<group>"; };
 		DC20BDC52296BE7900C505B9 /* LeagueDetailsVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueDetailsVController.swift; sourceTree = "<group>"; };
 		DC20BDC72296C6CF00C505B9 /* LeagueActionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueActionVC.swift; sourceTree = "<group>"; };
+=======
+		DC16ECAC2298968F005A3DE5 /* Coach.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Coach.storyboard; sourceTree = "<group>"; };
+		DC16ECAE229896B1005A3DE5 /* CoachModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachModel.swift; sourceTree = "<group>"; };
+		DC16ECB0229896C7005A3DE5 /* CoachTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachTVCell.swift; sourceTree = "<group>"; };
+		DC16ECB1229896C7005A3DE5 /* CoachTVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachTVController.swift; sourceTree = "<group>"; };
+		DC2CD919229744DC0027BE34 /* CoachController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachController.swift; sourceTree = "<group>"; };
+		DC2CD91C229745250027BE34 /* AlertServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertServices.swift; sourceTree = "<group>"; };
+>>>>>>> af035611d36b50be76ea8ef1a9820f3cb5d7e1d5
 		DC47B15522943F69007E291E /* DriveEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DriveEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC47B15822943F69007E291E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC47B15A22943F69007E291E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +81,11 @@
 		DC47B17422943F69007E291E /* DriveEyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DriveEyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC47B17822943F69007E291E /* DriveEyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveEyeUITests.swift; sourceTree = "<group>"; };
 		DC47B17A22943F69007E291E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC79D5182298120E00420167 /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
+		DC92416022974D95000F6A51 /* AlertStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlertStoryboard.storyboard; sourceTree = "<group>"; };
+		DCB00A6F229577E500F476A3 /* LoginAndRegistration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginAndRegistration.storyboard; sourceTree = "<group>"; };
+		DCB00A71229578B500F476A3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DCB00A762296D74900F476A3 /* UIButtonExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtention.swift; sourceTree = "<group>"; };
 		DCFE26C7229548F70043DB65 /* league.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = league.storyboard; sourceTree = "<group>"; };
 		DCFE26C922954EF60043DB65 /* LeagueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueModel.swift; sourceTree = "<group>"; };
 		DCFE26CB22955F150043DB65 /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
@@ -88,6 +116,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 		DC20BDC42296B07C00C505B9 /* leagueController */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +126,24 @@
 				DC20BDC72296C6CF00C505B9 /* LeagueActionVC.swift */,
 			);
 			path = leagueController;
+=======
+		DC2CD918229744910027BE34 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				DC2CD919229744DC0027BE34 /* CoachController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		DC2CD91B229745020027BE34 /* alert */ = {
+			isa = PBXGroup;
+			children = (
+				DC2CD91C229745250027BE34 /* AlertServices.swift */,
+				DC92416022974D95000F6A51 /* AlertStoryboard.storyboard */,
+				DC79D5182298120E00420167 /* AlertVC.swift */,
+			);
+			path = alert;
+>>>>>>> af035611d36b50be76ea8ef1a9820f3cb5d7e1d5
 			sourceTree = "<group>";
 		};
 		DC47B14C22943F69007E291E = {
@@ -122,6 +169,8 @@
 		DC47B15722943F69007E291E /* DriveEye */ = {
 			isa = PBXGroup;
 			children = (
+				DC561A602296F2D30005A922 /* coach */,
+				DCB00A752296D68B00F476A3 /* customViews */,
 				DCFE26C6229543520043DB65 /* model */,
 				DCFE26C5229543440043DB65 /* pojo */,
 				DCFE26C4229543330043DB65 /* Controller */,
@@ -152,11 +201,51 @@
 			path = DriveEyeUITests;
 			sourceTree = "<group>";
 		};
+		DC561A602296F2D30005A922 /* coach */ = {
+			isa = PBXGroup;
+			children = (
+				DC92415F22974C8D000F6A51 /* model */,
+				DC92415C22974AAF000F6A51 /* view */,
+				DC2CD918229744910027BE34 /* controller */,
+			);
+			path = coach;
+			sourceTree = "<group>";
+		};
+		DC92415C22974AAF000F6A51 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				DC16ECAC2298968F005A3DE5 /* Coach.storyboard */,
+				DC16ECB0229896C7005A3DE5 /* CoachTVCell.swift */,
+				DC16ECB1229896C7005A3DE5 /* CoachTVController.swift */,
+			);
+			name = view;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		DC92415F22974C8D000F6A51 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DC16ECAE229896B1005A3DE5 /* CoachModel.swift */,
+			);
+			name = model;
+			path = "New Group2";
+			sourceTree = "<group>";
+		};
+		DCB00A752296D68B00F476A3 /* customViews */ = {
+			isa = PBXGroup;
+			children = (
+				DC2CD91B229745020027BE34 /* alert */,
+				DCB00A762296D74900F476A3 /* UIButtonExtention.swift */,
+			);
+			path = customViews;
+			sourceTree = "<group>";
+		};
 		DCFE26C3229543210043DB65 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				DCFE26C7229548F70043DB65 /* league.storyboard */,
 				DC47B15C22943F69007E291E /* Main.storyboard */,
+				DCB00A6F229577E500F476A3 /* LoginAndRegistration.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,7 +254,11 @@
 			isa = PBXGroup;
 			children = (
 				DC47B15A22943F69007E291E /* ViewController.swift */,
+<<<<<<< HEAD
 				DC20BDC42296B07C00C505B9 /* leagueController */,
+=======
+				DCB00A71229578B500F476A3 /* LoginViewController.swift */,
+>>>>>>> af035611d36b50be76ea8ef1a9820f3cb5d7e1d5
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -296,7 +389,10 @@
 				DC47B16322943F69007E291E /* LaunchScreen.storyboard in Resources */,
 				DC47B16022943F69007E291E /* Assets.xcassets in Resources */,
 				DC47B15E22943F69007E291E /* Main.storyboard in Resources */,
+				DCB00A70229577E500F476A3 /* LoginAndRegistration.storyboard in Resources */,
+				DC16ECAD22989690005A3DE5 /* Coach.storyboard in Resources */,
 				DCFE26C8229548F70043DB65 /* league.storyboard in Resources */,
+				DC92416122974D95000F6A51 /* AlertStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,11 +417,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC16ECB3229896C7005A3DE5 /* CoachTVController.swift in Sources */,
+				DC16ECB2229896C7005A3DE5 /* CoachTVCell.swift in Sources */,
+				DC2CD91A229744DC0027BE34 /* CoachController.swift in Sources */,
+				DC2CD91D229745250027BE34 /* AlertServices.swift in Sources */,
 				DCFE26CA22954EF60043DB65 /* LeagueModel.swift in Sources */,
+<<<<<<< HEAD
 				DC20BDC82296C6CF00C505B9 /* LeagueActionVC.swift in Sources */,
+=======
+				DCB00A772296D74900F476A3 /* UIButtonExtention.swift in Sources */,
+>>>>>>> af035611d36b50be76ea8ef1a9820f3cb5d7e1d5
 				DC47B15B22943F69007E291E /* ViewController.swift in Sources */,
 				DC20BDC62296BE7900C505B9 /* LeagueDetailsVController.swift in Sources */,
 				DCFE26CC22955F150043DB65 /* League.swift in Sources */,
+				DC79D5192298120E00420167 /* AlertVC.swift in Sources */,
+				DCB00A72229578B500F476A3 /* LoginViewController.swift in Sources */,
+				DC16ECAF229896B1005A3DE5 /* CoachModel.swift in Sources */,
 				DC47B15922943F69007E291E /* AppDelegate.swift in Sources */,
 				DC20BDC32296A85100C505B9 /* LeagueTVCell.swift in Sources */,
 				DC20BDC02296A57000C505B9 /* LeagueTVController.swift in Sources */,

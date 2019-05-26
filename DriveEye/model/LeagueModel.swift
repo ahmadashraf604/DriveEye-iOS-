@@ -8,7 +8,13 @@
 
 import Foundation
 class LeagueModel {
+<<<<<<< HEAD
     func getLeagues()  {
         
     }
+=======
+//    func getLeagues() -> League {
+//        
+//    }
+>>>>>>> af035611d36b50be76ea8ef1a9820f3cb5d7e1d5
 }
