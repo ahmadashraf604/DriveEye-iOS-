@@ -19,7 +19,7 @@
 		DC20BDC82296C6CF00C505B9 /* LeagueActionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC20BDC72296C6CF00C505B9 /* LeagueActionVC.swift */; };
 		DC2CD91A229744DC0027BE34 /* CoachPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2CD919229744DC0027BE34 /* CoachPresenter.swift */; };
 		DC2CD91D229745250027BE34 /* AlertServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2CD91C229745250027BE34 /* AlertServices.swift */; };
-		DC436C07229C7A7C00308D69 /* CoachModelImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC436C06229C7A7C00308D69 /* CoachModelImp.swift */; };
+		DC436C07229C7A7C00308D69 /* CoachModelIMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC436C06229C7A7C00308D69 /* CoachModelIMP.swift */; };
 		DC4709892296BACF00F016D1 /* SeasonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4709882296BACF00F016D1 /* SeasonTableViewController.swift */; };
 		DC47098C2296BFCC00F016D1 /* SeasonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC47098B2296BFCC00F016D1 /* SeasonTableViewCell.swift */; };
 		DC4709912296E95900F016D1 /* SeasonDeatailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4709902296E95900F016D1 /* SeasonDeatailsViewController.swift */; };
@@ -80,7 +80,7 @@
 		DC20BDC72296C6CF00C505B9 /* LeagueActionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueActionVC.swift; sourceTree = "<group>"; };
 		DC2CD919229744DC0027BE34 /* CoachPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachPresenter.swift; sourceTree = "<group>"; };
 		DC2CD91C229745250027BE34 /* AlertServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertServices.swift; sourceTree = "<group>"; };
-		DC436C06229C7A7C00308D69 /* CoachModelImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoachModelImp.swift; path = DriveEye/coach/model/CoachModelImp.swift; sourceTree = SOURCE_ROOT; };
+		DC436C06229C7A7C00308D69 /* CoachModelIMP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoachModelIMP.swift; path = DriveEye/coach/model/CoachModelIMP.swift; sourceTree = SOURCE_ROOT; };
 		DC4709882296BACF00F016D1 /* SeasonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonTableViewController.swift; sourceTree = "<group>"; };
 		DC47098B2296BFCC00F016D1 /* SeasonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonTableViewCell.swift; sourceTree = "<group>"; };
 		DC4709902296E95900F016D1 /* SeasonDeatailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonDeatailsViewController.swift; sourceTree = "<group>"; };
@@ -282,7 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				DC16ECAE229896B1005A3DE5 /* CoachRespose.swift */,
-				DC436C06229C7A7C00308D69 /* CoachModelImp.swift */,
+				DC436C06229C7A7C00308D69 /* CoachModelIMP.swift */,
 			);
 			name = model;
 			path = "New Group2";
@@ -571,7 +571,7 @@
 				DC4709B8229A2B6B00F016D1 /* User.swift in Sources */,
 				DCFE26CC22955F150043DB65 /* League.swift in Sources */,
 				DC79D5192298120E00420167 /* AlertVC.swift in Sources */,
-				DC436C07229C7A7C00308D69 /* CoachModelImp.swift in Sources */,
+				DC436C07229C7A7C00308D69 /* CoachModelIMP.swift in Sources */,
 				DCB00A72229578B500F476A3 /* LoginViewController.swift in Sources */,
 				DC16ECAF229896B1005A3DE5 /* CoachRespose.swift in Sources */,
 				DC47B15922943F69007E291E /* AppDelegate.swift in Sources */,

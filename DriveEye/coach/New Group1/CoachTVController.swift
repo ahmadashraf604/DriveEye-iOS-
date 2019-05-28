@@ -9,8 +9,10 @@
 import UIKit
 
 class CoachTableViewController: UITableViewController  ,CoachViewProtocol{
+ 
+    
   
-    var presenter   =  CoachPresenter(coachModel: CoachModelImp())
+    var presenter   =  CoachPresenter(coachModel: CoachModelIMP())
     var coaches : [Coach] = []
     let alertServices = AlertServices ()
   
@@ -26,6 +28,22 @@ class CoachTableViewController: UITableViewController  ,CoachViewProtocol{
         self.coaches = coaches
         tableView.reloadData()
         print("displayData")
+    }
+    func displayEmptyTable() {
+        let alert = UIAlertController(title: "coach", message: "no coaches found", preferredStyle: .alert)
+        
+        let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction!) in
+            
+            print("Ok button tapped");
+            
+        }
+        alert.addAction(OKAction)
+        
+        present(alert, animated: true,completion:nil)
+  
+    }
+    func doSomething(action: UIAlertAction) {
+        //Use action.title
     }
         override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
