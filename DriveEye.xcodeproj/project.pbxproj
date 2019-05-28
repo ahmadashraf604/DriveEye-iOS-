@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A38D319E229BFE6600E0F493 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A38D319D229BFE6600E0F493 /* logo.png */; };
+		A38D31A0229C7A4A00E0F493 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D319F229C7A4A00E0F493 /* RegistrationViewController.swift */; };
 		DC47B15922943F69007E291E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC47B15822943F69007E291E /* AppDelegate.swift */; };
 		DC47B15B22943F69007E291E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC47B15A22943F69007E291E /* ViewController.swift */; };
 		DC47B15E22943F69007E291E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC47B15C22943F69007E291E /* Main.storyboard */; };
@@ -16,7 +18,6 @@
 		DC47B17922943F69007E291E /* DriveEyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC47B17822943F69007E291E /* DriveEyeUITests.swift */; };
 		DCB00A70229577E500F476A3 /* LoginAndRegistration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB00A6F229577E500F476A3 /* LoginAndRegistration.storyboard */; };
 		DCB00A72229578B500F476A3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB00A71229578B500F476A3 /* LoginViewController.swift */; };
-		DCB00A742296D02500F476A3 /* defaultImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DCB00A732296D02400F476A3 /* defaultImage.jpg */; };
 		DCB00A772296D74900F476A3 /* UIButtonExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB00A762296D74900F476A3 /* UIButtonExtention.swift */; };
 		DCFE26C8229548F70043DB65 /* league.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCFE26C7229548F70043DB65 /* league.storyboard */; };
 		DCFE26CA22954EF60043DB65 /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFE26C922954EF60043DB65 /* LeagueModel.swift */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A38D319D229BFE6600E0F493 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../logo.png; sourceTree = "<group>"; };
+		A38D319F229C7A4A00E0F493 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		DC47B15522943F69007E291E /* DriveEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DriveEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC47B15822943F69007E291E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC47B15A22943F69007E291E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +59,6 @@
 		DC47B17A22943F69007E291E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCB00A6F229577E500F476A3 /* LoginAndRegistration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginAndRegistration.storyboard; sourceTree = "<group>"; };
 		DCB00A71229578B500F476A3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		DCB00A732296D02400F476A3 /* defaultImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = defaultImage.jpg; path = ../../defaultImage.jpg; sourceTree = "<group>"; };
 		DCB00A762296D74900F476A3 /* UIButtonExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtention.swift; sourceTree = "<group>"; };
 		DCFE26C7229548F70043DB65 /* league.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = league.storyboard; sourceTree = "<group>"; };
 		DCFE26C922954EF60043DB65 /* LeagueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueModel.swift; sourceTree = "<group>"; };
@@ -111,8 +113,8 @@
 		DC47B15722943F69007E291E /* DriveEye */ = {
 			isa = PBXGroup;
 			children = (
+				A38D319D229BFE6600E0F493 /* logo.png */,
 				DCB00A752296D68B00F476A3 /* customViews */,
-				DCB00A732296D02400F476A3 /* defaultImage.jpg */,
 				DCFE26C6229543520043DB65 /* model */,
 				DCFE26C5229543440043DB65 /* pojo */,
 				DCFE26C4229543330043DB65 /* Controller */,
@@ -166,6 +168,7 @@
 			children = (
 				DC47B15A22943F69007E291E /* ViewController.swift */,
 				DCB00A71229578B500F476A3 /* LoginViewController.swift */,
+				A38D319F229C7A4A00E0F493 /* RegistrationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -295,8 +298,8 @@
 			files = (
 				DC47B16322943F69007E291E /* LaunchScreen.storyboard in Resources */,
 				DC47B16022943F69007E291E /* Assets.xcassets in Resources */,
+				A38D319E229BFE6600E0F493 /* logo.png in Resources */,
 				DC47B15E22943F69007E291E /* Main.storyboard in Resources */,
-				DCB00A742296D02500F476A3 /* defaultImage.jpg in Resources */,
 				DCB00A70229577E500F476A3 /* LoginAndRegistration.storyboard in Resources */,
 				DCFE26C8229548F70043DB65 /* league.storyboard in Resources */,
 			);
@@ -327,6 +330,7 @@
 				DCB00A772296D74900F476A3 /* UIButtonExtention.swift in Sources */,
 				DC47B15B22943F69007E291E /* ViewController.swift in Sources */,
 				DCFE26CC22955F150043DB65 /* League.swift in Sources */,
+				A38D31A0229C7A4A00E0F493 /* RegistrationViewController.swift in Sources */,
 				DCB00A72229578B500F476A3 /* LoginViewController.swift in Sources */,
 				DC47B15922943F69007E291E /* AppDelegate.swift in Sources */,
 			);
