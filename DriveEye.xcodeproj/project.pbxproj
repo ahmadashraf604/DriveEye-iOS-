@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11BA52E26FE4A949A170DE5E /* Pods_DriveEye.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C1BE22A2AF85433A67F30D /* Pods_DriveEye.framework */; };
+		4122BF55B7C34843D3495C3A /* Pods_DriveEyeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E89E7D4835FF40FB321F44B /* Pods_DriveEyeTests.framework */; };
+		A63989D36703CA21DA004BC9 /* Pods_DriveEyeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C70749BFC6FC4C072ED73F4 /* Pods_DriveEyeUITests.framework */; };
 		DC16ECAD22989690005A3DE5 /* Coach.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC16ECAC2298968F005A3DE5 /* Coach.storyboard */; };
 		DC16ECAF229896B1005A3DE5 /* CoachModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC16ECAE229896B1005A3DE5 /* CoachModel.swift */; };
 		DC16ECB2229896C7005A3DE5 /* CoachTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC16ECB0229896C7005A3DE5 /* CoachTVCell.swift */; };
 		DC16ECB3229896C7005A3DE5 /* CoachTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC16ECB1229896C7005A3DE5 /* CoachTVController.swift */; };
-		DC20BDC02296A57000C505B9 /* LeagueTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC20BDBF2296A57000C505B9 /* LeagueTVController.swift */; };
 		DC20BDC32296A85100C505B9 /* LeagueTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC20BDC22296A85100C505B9 /* LeagueTVCell.swift */; };
 		DC20BDC62296BE7900C505B9 /* LeagueDetailsVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC20BDC52296BE7900C505B9 /* LeagueDetailsVController.swift */; };
-		DC20BDC82296C6CF00C505B9 /* LeagueActionVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC20BDC72296C6CF00C505B9 /* LeagueActionVController.swift */; };
+		DC20BDC82296C6CF00C505B9 /* LeagueAlertVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC20BDC72296C6CF00C505B9 /* LeagueAlertVController.swift */; };
 		DC2CD91A229744DC0027BE34 /* CoachController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2CD919229744DC0027BE34 /* CoachController.swift */; };
 		DC2CD91D229745250027BE34 /* AlertServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2CD91C229745250027BE34 /* AlertServices.swift */; };
 		DC4709892296BACF00F016D1 /* SeasonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4709882296BACF00F016D1 /* SeasonTableViewController.swift */; };
@@ -35,9 +37,13 @@
 		DCB00A70229577E500F476A3 /* LoginAndRegistration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB00A6F229577E500F476A3 /* LoginAndRegistration.storyboard */; };
 		DCB00A72229578B500F476A3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB00A71229578B500F476A3 /* LoginViewController.swift */; };
 		DCB00A772296D74900F476A3 /* UIButtonExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB00A762296D74900F476A3 /* UIButtonExtention.swift */; };
-		DCFE26C8229548F70043DB65 /* league.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCFE26C7229548F70043DB65 /* league.storyboard */; };
+		DCFA73E8229BE84E00CDC104 /* LeagueResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFA73E7229BE84E00CDC104 /* LeagueResponse.swift */; };
+		DCFA73EA229BEA1000CDC104 /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFA73E9229BEA1000CDC104 /* League.swift */; };
+		DCFBC61C229CBF470082C5B5 /* LeagueDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFBC61B229CBF470082C5B5 /* LeagueDetailsResponse.swift */; };
+		DCFBC61E229CC0080082C5B5 /* UserLeague.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFBC61D229CC0080082C5B5 /* UserLeague.swift */; };
+		DCFE26C8229548F70043DB65 /* League.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCFE26C7229548F70043DB65 /* League.storyboard */; };
 		DCFE26CA22954EF60043DB65 /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFE26C922954EF60043DB65 /* LeagueModel.swift */; };
-		DCFE26CC22955F150043DB65 /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFE26CB22955F150043DB65 /* League.swift */; };
+		DCFE6851229B16FE004FFECA /* LeagueVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFE6850229B16FE004FFECA /* LeagueVController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,14 +64,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C5E10B5845CF107BD15F1DD /* Pods-DriveEyeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriveEyeUITests.release.xcconfig"; path = "Target Support Files/Pods-DriveEyeUITests/Pods-DriveEyeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2397710A3E53D6FBCA7C8B25 /* Pods-DriveEye.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriveEye.release.xcconfig"; path = "Target Support Files/Pods-DriveEye/Pods-DriveEye.release.xcconfig"; sourceTree = "<group>"; };
+		69457F4C23196F701FE66241 /* Pods-DriveEyeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriveEyeUITests.debug.xcconfig"; path = "Target Support Files/Pods-DriveEyeUITests/Pods-DriveEyeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		75C1BE22A2AF85433A67F30D /* Pods_DriveEye.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DriveEye.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E89E7D4835FF40FB321F44B /* Pods_DriveEyeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DriveEyeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C70749BFC6FC4C072ED73F4 /* Pods_DriveEyeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DriveEyeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC9B9B970489E7C885F5E442 /* Pods-DriveEyeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriveEyeTests.debug.xcconfig"; path = "Target Support Files/Pods-DriveEyeTests/Pods-DriveEyeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BCEA8F317091670CB00C5BFC /* Pods-DriveEye.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriveEye.debug.xcconfig"; path = "Target Support Files/Pods-DriveEye/Pods-DriveEye.debug.xcconfig"; sourceTree = "<group>"; };
 		DC16ECAC2298968F005A3DE5 /* Coach.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Coach.storyboard; sourceTree = "<group>"; };
 		DC16ECAE229896B1005A3DE5 /* CoachModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachModel.swift; sourceTree = "<group>"; };
 		DC16ECB0229896C7005A3DE5 /* CoachTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachTVCell.swift; sourceTree = "<group>"; };
 		DC16ECB1229896C7005A3DE5 /* CoachTVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachTVController.swift; sourceTree = "<group>"; };
-		DC20BDBF2296A57000C505B9 /* LeagueTVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueTVController.swift; sourceTree = "<group>"; };
 		DC20BDC22296A85100C505B9 /* LeagueTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueTVCell.swift; sourceTree = "<group>"; };
 		DC20BDC52296BE7900C505B9 /* LeagueDetailsVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueDetailsVController.swift; sourceTree = "<group>"; };
-		DC20BDC72296C6CF00C505B9 /* LeagueActionVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueActionVController.swift; sourceTree = "<group>"; };
+		DC20BDC72296C6CF00C505B9 /* LeagueAlertVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueAlertVController.swift; sourceTree = "<group>"; };
 		DC2CD919229744DC0027BE34 /* CoachController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachController.swift; sourceTree = "<group>"; };
 		DC2CD91C229745250027BE34 /* AlertServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertServices.swift; sourceTree = "<group>"; };
 		DC4709882296BACF00F016D1 /* SeasonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonTableViewController.swift; sourceTree = "<group>"; };
@@ -92,9 +105,14 @@
 		DCB00A6F229577E500F476A3 /* LoginAndRegistration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginAndRegistration.storyboard; sourceTree = "<group>"; };
 		DCB00A71229578B500F476A3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DCB00A762296D74900F476A3 /* UIButtonExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtention.swift; sourceTree = "<group>"; };
-		DCFE26C7229548F70043DB65 /* league.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = league.storyboard; sourceTree = "<group>"; };
+		DCFA73E7229BE84E00CDC104 /* LeagueResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueResponse.swift; sourceTree = "<group>"; };
+		DCFA73E9229BEA1000CDC104 /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
+		DCFBC61B229CBF470082C5B5 /* LeagueDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueDetailsResponse.swift; sourceTree = "<group>"; };
+		DCFBC61D229CC0080082C5B5 /* UserLeague.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLeague.swift; sourceTree = "<group>"; };
+		DCFE26C7229548F70043DB65 /* League.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = League.storyboard; sourceTree = "<group>"; };
 		DCFE26C922954EF60043DB65 /* LeagueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueModel.swift; sourceTree = "<group>"; };
-		DCFE26CB22955F150043DB65 /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
+		DCFE6850229B16FE004FFECA /* LeagueVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueVController.swift; sourceTree = "<group>"; };
+		EEC3B23BFC89A41DD10DF775 /* Pods-DriveEyeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriveEyeTests.release.xcconfig"; path = "Target Support Files/Pods-DriveEyeTests/Pods-DriveEyeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11BA52E26FE4A949A170DE5E /* Pods_DriveEye.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4122BF55B7C34843D3495C3A /* Pods_DriveEyeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,19 +136,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A63989D36703CA21DA004BC9 /* Pods_DriveEyeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		834F450458B9AD5AF16AA06D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75C1BE22A2AF85433A67F30D /* Pods_DriveEye.framework */,
+				7E89E7D4835FF40FB321F44B /* Pods_DriveEyeTests.framework */,
+				8C70749BFC6FC4C072ED73F4 /* Pods_DriveEyeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DC20BDC42296B07C00C505B9 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				DC20BDBF2296A57000C505B9 /* LeagueTVController.swift */,
 				DC20BDC22296A85100C505B9 /* LeagueTVCell.swift */,
 				DC20BDC52296BE7900C505B9 /* LeagueDetailsVController.swift */,
-				DC20BDC72296C6CF00C505B9 /* LeagueActionVController.swift */,
+				DC20BDC72296C6CF00C505B9 /* LeagueAlertVController.swift */,
+				DCFE6850229B16FE004FFECA /* LeagueVController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -166,6 +197,8 @@
 				DC47B16C22943F69007E291E /* DriveEyeTests */,
 				DC47B17722943F69007E291E /* DriveEyeUITests */,
 				DC47B15622943F69007E291E /* Products */,
+				EC5B14273D9CDA6780C03F3E /* Pods */,
+				834F450458B9AD5AF16AA06D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -257,6 +290,7 @@
 		DCD42EA9229AD8D000A6F1F0 /* league */ = {
 			isa = PBXGroup;
 			children = (
+				DCFA73E6229BE82000CDC104 /* pojo */,
 				DCD42EAB229AD93B00A6F1F0 /* model */,
 				DCD42EAA229AD90700A6F1F0 /* view */,
 				DC20BDC42296B07C00C505B9 /* controller */,
@@ -267,7 +301,7 @@
 		DCD42EAA229AD90700A6F1F0 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				DCFE26C7229548F70043DB65 /* league.storyboard */,
+				DCFE26C7229548F70043DB65 /* League.storyboard */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -278,6 +312,17 @@
 				DCFE26C922954EF60043DB65 /* LeagueModel.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		DCFA73E6229BE82000CDC104 /* pojo */ = {
+			isa = PBXGroup;
+			children = (
+				DCFA73E7229BE84E00CDC104 /* LeagueResponse.swift */,
+				DCFA73E9229BEA1000CDC104 /* League.swift */,
+				DCFBC61B229CBF470082C5B5 /* LeagueDetailsResponse.swift */,
+				DCFBC61D229CC0080082C5B5 /* UserLeague.swift */,
+			);
+			path = pojo;
 			sourceTree = "<group>";
 		};
 		DCFE26C3229543210043DB65 /* Views */ = {
@@ -304,11 +349,23 @@
 		DCFE26C5229543440043DB65 /* pojo */ = {
 			isa = PBXGroup;
 			children = (
-				DCFE26CB22955F150043DB65 /* League.swift */,
 				DC4709B5229A29B500F016D1 /* Season.swift */,
 				DC4709B7229A2B6B00F016D1 /* User.swift */,
 			);
 			path = pojo;
+			sourceTree = "<group>";
+		};
+		EC5B14273D9CDA6780C03F3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCEA8F317091670CB00C5BFC /* Pods-DriveEye.debug.xcconfig */,
+				2397710A3E53D6FBCA7C8B25 /* Pods-DriveEye.release.xcconfig */,
+				AC9B9B970489E7C885F5E442 /* Pods-DriveEyeTests.debug.xcconfig */,
+				EEC3B23BFC89A41DD10DF775 /* Pods-DriveEyeTests.release.xcconfig */,
+				69457F4C23196F701FE66241 /* Pods-DriveEyeUITests.debug.xcconfig */,
+				1C5E10B5845CF107BD15F1DD /* Pods-DriveEyeUITests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,9 +375,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC47B17D22943F6A007E291E /* Build configuration list for PBXNativeTarget "DriveEye" */;
 			buildPhases = (
+				DEC5799685ABD9339F97CF8E /* [CP] Check Pods Manifest.lock */,
 				DC47B15122943F69007E291E /* Sources */,
 				DC47B15222943F69007E291E /* Frameworks */,
 				DC47B15322943F69007E291E /* Resources */,
+				0C36D1C211AD6B4E398C1D7B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -335,6 +394,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC47B18022943F6A007E291E /* Build configuration list for PBXNativeTarget "DriveEyeTests" */;
 			buildPhases = (
+				309BC1A9C84CB1B3FA61170C /* [CP] Check Pods Manifest.lock */,
 				DC47B16522943F69007E291E /* Sources */,
 				DC47B16622943F69007E291E /* Frameworks */,
 				DC47B16722943F69007E291E /* Resources */,
@@ -353,6 +413,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC47B18322943F6A007E291E /* Build configuration list for PBXNativeTarget "DriveEyeUITests" */;
 			buildPhases = (
+				312F6284BD3266D54EAF0192 /* [CP] Check Pods Manifest.lock */,
 				DC47B17022943F69007E291E /* Sources */,
 				DC47B17122943F69007E291E /* Frameworks */,
 				DC47B17222943F69007E291E /* Resources */,
@@ -424,7 +485,7 @@
 				DC47B15E22943F69007E291E /* Main.storyboard in Resources */,
 				DCB00A70229577E500F476A3 /* LoginAndRegistration.storyboard in Resources */,
 				DC16ECAD22989690005A3DE5 /* Coach.storyboard in Resources */,
-				DCFE26C8229548F70043DB65 /* league.storyboard in Resources */,
+				DCFE26C8229548F70043DB65 /* League.storyboard in Resources */,
 				DC92416122974D95000F6A51 /* AlertStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +506,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C36D1C211AD6B4E398C1D7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DriveEye/Pods-DriveEye-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DriveEye/Pods-DriveEye-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		309BC1A9C84CB1B3FA61170C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DriveEyeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		312F6284BD3266D54EAF0192 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DriveEyeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEC5799685ABD9339F97CF8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DriveEye-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DC47B15122943F69007E291E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -455,21 +591,24 @@
 				DC16ECB3229896C7005A3DE5 /* CoachTVController.swift in Sources */,
 				DC16ECB2229896C7005A3DE5 /* CoachTVCell.swift in Sources */,
 				DC2CD91A229744DC0027BE34 /* CoachController.swift in Sources */,
+				DCFBC61E229CC0080082C5B5 /* UserLeague.swift in Sources */,
+				DCFE6851229B16FE004FFECA /* LeagueVController.swift in Sources */,
 				DC2CD91D229745250027BE34 /* AlertServices.swift in Sources */,
 				DCFE26CA22954EF60043DB65 /* LeagueModel.swift in Sources */,
-				DC20BDC82296C6CF00C505B9 /* LeagueActionVController.swift in Sources */,
+				DC20BDC82296C6CF00C505B9 /* LeagueAlertVController.swift in Sources */,
 				DCB00A772296D74900F476A3 /* UIButtonExtention.swift in Sources */,
+				DCFA73EA229BEA1000CDC104 /* League.swift in Sources */,
 				DC47B15B22943F69007E291E /* ViewController.swift in Sources */,
 				DC20BDC62296BE7900C505B9 /* LeagueDetailsVController.swift in Sources */,
 				DC4709892296BACF00F016D1 /* SeasonTableViewController.swift in Sources */,
 				DC4709B8229A2B6B00F016D1 /* User.swift in Sources */,
-				DCFE26CC22955F150043DB65 /* League.swift in Sources */,
 				DC79D5192298120E00420167 /* AlertVC.swift in Sources */,
+				DCFA73E8229BE84E00CDC104 /* LeagueResponse.swift in Sources */,
+				DCFBC61C229CBF470082C5B5 /* LeagueDetailsResponse.swift in Sources */,
 				DCB00A72229578B500F476A3 /* LoginViewController.swift in Sources */,
 				DC16ECAF229896B1005A3DE5 /* CoachModel.swift in Sources */,
 				DC47B15922943F69007E291E /* AppDelegate.swift in Sources */,
 				DC20BDC32296A85100C505B9 /* LeagueTVCell.swift in Sources */,
-				DC20BDC02296A57000C505B9 /* LeagueTVController.swift in Sources */,
 				DC4709912296E95900F016D1 /* SeasonDeatailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -634,6 +773,7 @@
 		};
 		DC47B17E22943F6A007E291E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCEA8F317091670CB00C5BFC /* Pods-DriveEye.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -648,6 +788,7 @@
 		};
 		DC47B17F22943F6A007E291E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2397710A3E53D6FBCA7C8B25 /* Pods-DriveEye.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -662,6 +803,7 @@
 		};
 		DC47B18122943F6A007E291E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC9B9B970489E7C885F5E442 /* Pods-DriveEyeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -678,6 +820,7 @@
 		};
 		DC47B18222943F6A007E291E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEC3B23BFC89A41DD10DF775 /* Pods-DriveEyeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -694,6 +837,7 @@
 		};
 		DC47B18422943F6A007E291E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69457F4C23196F701FE66241 /* Pods-DriveEyeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -709,6 +853,7 @@
 		};
 		DC47B18522943F6A007E291E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C5E10B5845CF107BD15F1DD /* Pods-DriveEyeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
