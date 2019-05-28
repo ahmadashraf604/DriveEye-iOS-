@@ -8,24 +8,26 @@
 
 import UIKit
 
-class CoachTableViewController: UITableViewController {
-    
-    var controller  = CoachController()
-    var coaches : [CoachModel] = []
-   let alertServices = AlertServices ()
+class CoachTableViewController: UITableViewController  ,CoachViewProtocol{
+  
+    var presenter   =  CoachPresenter(coachModel: CoachModelImp())
+    var coaches : [Coach] = []
+    let alertServices = AlertServices ()
+  
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
-        coaches = [CoachModel] ()
-        coaches =  controller.getAllCoach()
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        presenter.attachView(view: self)
+        coaches = [Coach] ()
+        presenter.getAllCoach()
+        print("coaches count CoachTableViewController \(coaches.count)")
     }
-    // MARK: - Table view data source
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    func displayData(coaches: [Coach]) {
+        self.coaches = coaches
+        tableView.reloadData()
+        print("displayData")
+    }
+        override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
@@ -34,17 +36,17 @@ class CoachTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return coaches.count
     }
-     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-     let cell = tableView.dequeueReusableCell(withIdentifier: "CoachIdentifier", for: indexPath) as! CoachTVCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CoachIdentifier", for: indexPath) as! CoachTVCell
         cell.title.text = coaches[indexPath.row].title
         
-     return cell
-     }
+        return cell
+    }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let alert = alertServices.alert(title: coaches[indexPath.row].title, describtion: coaches[indexPath.row].describtion)
+        let alert = alertServices.alert(title: coaches[indexPath.row].title, describtion: coaches[indexPath.row].responseDescription)
         present(alert, animated: true)
     }
- 
+    
     
     /*
      // Override to support conditional editing of the table view.
