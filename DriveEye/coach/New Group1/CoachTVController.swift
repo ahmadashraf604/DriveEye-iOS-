@@ -9,8 +9,6 @@
 import UIKit
 
 class CoachTableViewController: UITableViewController  ,CoachViewProtocol{
- 
-    
   
     var presenter   =  CoachPresenter(coachModel: CoachModelIMP())
     var coaches : [Coach] = []
@@ -22,20 +20,14 @@ class CoachTableViewController: UITableViewController  ,CoachViewProtocol{
         presenter.attachView(view: self)
         coaches = [Coach] ()
         presenter.getAllCoach()
-        print("coaches count CoachTableViewController \(coaches.count)")
     }
     func displayData(coaches: [Coach]) {
         self.coaches = coaches
         tableView.reloadData()
-        print("displayData")
     }
     func displayEmptyTable() {
         let alert = UIAlertController(title: "coach", message: "no coaches found", preferredStyle: .alert)
-        
         let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction!) in
-            
-            print("Ok button tapped");
-            
         }
         alert.addAction(OKAction)
         

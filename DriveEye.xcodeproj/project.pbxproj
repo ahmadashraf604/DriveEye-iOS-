@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		64D0511BA770B3CDF92C39DD /* Pods_DriveEyeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EDC92936BC94F4B8EE588EF /* Pods_DriveEyeTests.framework */; };
 		70F86A624202D678BD413F98 /* Pods_DriveEye.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 198B3AA5A2A66C462E52C511 /* Pods_DriveEye.framework */; };
+		DC0E3939229F55E80057889D /* HomeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E3938229F55E80057889D /* HomeViewProtocol.swift */; };
+		DC0E393B229F665F0057889D /* HomeModelIMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E393A229F665F0057889D /* HomeModelIMP.swift */; };
+		DC0E393D229F66860057889D /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0E393C229F66860057889D /* LocationService.swift */; };
 		DC16ECAD22989690005A3DE5 /* Coach.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC16ECAC2298968F005A3DE5 /* Coach.storyboard */; };
 		DC16ECAF229896B1005A3DE5 /* CoachRespose.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC16ECAE229896B1005A3DE5 /* CoachRespose.swift */; };
 		DC16ECB2229896C7005A3DE5 /* CoachTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC16ECB0229896C7005A3DE5 /* CoachTVCell.swift */; };
@@ -20,6 +23,10 @@
 		DC2CD91A229744DC0027BE34 /* CoachPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2CD919229744DC0027BE34 /* CoachPresenter.swift */; };
 		DC2CD91D229745250027BE34 /* AlertServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2CD91C229745250027BE34 /* AlertServices.swift */; };
 		DC436C07229C7A7C00308D69 /* CoachModelIMP.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC436C06229C7A7C00308D69 /* CoachModelIMP.swift */; };
+		DC4372CE229EA1D300019390 /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4372CD229EA1D300019390 /* HomeStoryboard.storyboard */; };
+		DC4372D0229EA23600019390 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4372CF229EA23600019390 /* HomeView.swift */; };
+		DC4372D2229EC8CF00019390 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4372D1229EC8CF00019390 /* Trip.swift */; };
+		DC4372D4229ECE2000019390 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4372D3229ECE2000019390 /* HomePresenter.swift */; };
 		DC4709892296BACF00F016D1 /* SeasonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4709882296BACF00F016D1 /* SeasonTableViewController.swift */; };
 		DC47098C2296BFCC00F016D1 /* SeasonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC47098B2296BFCC00F016D1 /* SeasonTableViewCell.swift */; };
 		DC4709912296E95900F016D1 /* SeasonDeatailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4709902296E95900F016D1 /* SeasonDeatailsViewController.swift */; };
@@ -70,6 +77,9 @@
 		90F57029866A163DCC656399 /* Pods-DriveEye.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriveEye.release.xcconfig"; path = "Target Support Files/Pods-DriveEye/Pods-DriveEye.release.xcconfig"; sourceTree = "<group>"; };
 		CAC47E4720F1F3B4CB128B7D /* Pods_DriveEyeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DriveEyeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E2F53841BB08100CA7876A /* Pods-DriveEyeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriveEyeTests.release.xcconfig"; path = "Target Support Files/Pods-DriveEyeTests/Pods-DriveEyeTests.release.xcconfig"; sourceTree = "<group>"; };
+		DC0E3938229F55E80057889D /* HomeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProtocol.swift; sourceTree = "<group>"; };
+		DC0E393A229F665F0057889D /* HomeModelIMP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModelIMP.swift; sourceTree = "<group>"; };
+		DC0E393C229F66860057889D /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		DC16ECAC2298968F005A3DE5 /* Coach.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Coach.storyboard; sourceTree = "<group>"; };
 		DC16ECAE229896B1005A3DE5 /* CoachRespose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachRespose.swift; sourceTree = "<group>"; };
 		DC16ECB0229896C7005A3DE5 /* CoachTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoachTVCell.swift; sourceTree = "<group>"; };
@@ -81,6 +91,10 @@
 		DC2CD919229744DC0027BE34 /* CoachPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachPresenter.swift; sourceTree = "<group>"; };
 		DC2CD91C229745250027BE34 /* AlertServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertServices.swift; sourceTree = "<group>"; };
 		DC436C06229C7A7C00308D69 /* CoachModelIMP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoachModelIMP.swift; path = DriveEye/coach/model/CoachModelIMP.swift; sourceTree = SOURCE_ROOT; };
+		DC4372CD229EA1D300019390 /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
+		DC4372CF229EA23600019390 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DC4372D1229EC8CF00019390 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		DC4372D3229ECE2000019390 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		DC4709882296BACF00F016D1 /* SeasonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonTableViewController.swift; sourceTree = "<group>"; };
 		DC47098B2296BFCC00F016D1 /* SeasonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonTableViewCell.swift; sourceTree = "<group>"; };
 		DC4709902296E95900F016D1 /* SeasonDeatailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonDeatailsViewController.swift; sourceTree = "<group>"; };
@@ -191,6 +205,44 @@
 			path = alert;
 			sourceTree = "<group>";
 		};
+		DC4372C7229E9D7F00019390 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				DC4372CA229E9DBE00019390 /* presenter */,
+				DC4372C9229E9DB400019390 /* model */,
+				DC4372C8229E9D9900019390 /* view */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		DC4372C8229E9D9900019390 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				DC4372CD229EA1D300019390 /* HomeStoryboard.storyboard */,
+				DC4372CF229EA23600019390 /* HomeView.swift */,
+				DC0E3938229F55E80057889D /* HomeViewProtocol.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		DC4372C9229E9DB400019390 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DC4372D1229EC8CF00019390 /* Trip.swift */,
+				DC0E393A229F665F0057889D /* HomeModelIMP.swift */,
+				DC0E393C229F66860057889D /* LocationService.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		DC4372CA229E9DBE00019390 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DC4372D3229ECE2000019390 /* HomePresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
 		DC47098A2296BF8600F016D1 /* cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +276,7 @@
 		DC47B15722943F69007E291E /* DriveEye */ = {
 			isa = PBXGroup;
 			children = (
+				DC4372C7229E9D7F00019390 /* home */,
 				DC47098A2296BF8600F016D1 /* cells */,
 				DC561A602296F2D30005A922 /* coach */,
 				DCB00A752296D68B00F476A3 /* customViews */,
@@ -451,6 +504,7 @@
 			files = (
 				DC47B16322943F69007E291E /* LaunchScreen.storyboard in Resources */,
 				DC47B16022943F69007E291E /* Assets.xcassets in Resources */,
+				DC4372CE229EA1D300019390 /* HomeStoryboard.storyboard in Resources */,
 				DC606A1B22956864003AEBB7 /* Season.storyboard in Resources */,
 				DC47B15E22943F69007E291E /* Main.storyboard in Resources */,
 				DCB00A70229577E500F476A3 /* LoginAndRegistration.storyboard in Resources */,
@@ -557,6 +611,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC4709B6229A29B500F016D1 /* Season.swift in Sources */,
+				DC0E393B229F665F0057889D /* HomeModelIMP.swift in Sources */,
 				DC47098C2296BFCC00F016D1 /* SeasonTableViewCell.swift in Sources */,
 				DC16ECB3229896C7005A3DE5 /* CoachTVController.swift in Sources */,
 				DC16ECB2229896C7005A3DE5 /* CoachTVCell.swift in Sources */,
@@ -568,6 +623,9 @@
 				DC47B15B22943F69007E291E /* ViewController.swift in Sources */,
 				DC20BDC62296BE7900C505B9 /* LeagueDetailsVController.swift in Sources */,
 				DC4709892296BACF00F016D1 /* SeasonTableViewController.swift in Sources */,
+				DC4372D2229EC8CF00019390 /* Trip.swift in Sources */,
+				DC0E393D229F66860057889D /* LocationService.swift in Sources */,
+				DC4372D4229ECE2000019390 /* HomePresenter.swift in Sources */,
 				DC4709B8229A2B6B00F016D1 /* User.swift in Sources */,
 				DCFE26CC22955F150043DB65 /* League.swift in Sources */,
 				DC79D5192298120E00420167 /* AlertVC.swift in Sources */,
@@ -577,6 +635,8 @@
 				DC47B15922943F69007E291E /* AppDelegate.swift in Sources */,
 				DC20BDC32296A85100C505B9 /* LeagueTVCell.swift in Sources */,
 				DC20BDC02296A57000C505B9 /* LeagueTVController.swift in Sources */,
+				DC0E3939229F55E80057889D /* HomeViewProtocol.swift in Sources */,
+				DC4372D0229EA23600019390 /* HomeView.swift in Sources */,
 				DC4709912296E95900F016D1 /* SeasonDeatailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

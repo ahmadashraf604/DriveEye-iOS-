@@ -11,7 +11,8 @@ class CoachPresenter  : NSObject{
                 return}
             self.delegate?.displayEmptyTable()
             
-        })
+        }
+        )
     }
     
     init(coachModel:CoachModelIMP){
@@ -23,6 +24,7 @@ class CoachPresenter  : NSObject{
     }
     
 }
+
 protocol CoachViewProtocol: NSObjectProtocol {
     func displayData(coaches : [Coach])
     func displayEmptyTable()
