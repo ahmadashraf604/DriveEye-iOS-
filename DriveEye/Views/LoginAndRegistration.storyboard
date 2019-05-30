@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uev-e4-v0R">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DOY-66-c6C">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -37,7 +37,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="AJG-ZO-CJv" userLabel="Info Stack View">
                                                 <rect key="frame" x="0.0" y="274" width="282" height="73"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8C0-M8-4g9">
+                                                    <textField opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="a@a.com" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8C0-M8-4g9">
                                                         <rect key="frame" x="0.0" y="0.0" width="282" height="30"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <string key="placeholder" base64-UTF8="YES">
@@ -47,7 +47,7 @@ FkVtYWlsA
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" textContentType="email"/>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Qx-9d-0NG">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1111" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Qx-9d-0NG">
                                                         <rect key="frame" x="0.0" y="43" width="282" height="30"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <string key="placeholder" base64-UTF8="YES">
@@ -72,6 +72,9 @@ FlBhc3N3b3JkA
                                                         <state key="normal" title="Login">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="loginWithEmail:" destination="DOY-66-c6C" eventType="touchUpInside" id="in4-5N-PyQ"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bK0-vH-XGM">
                                                         <rect key="frame" x="0.0" y="54" width="282" height="36"/>
@@ -80,6 +83,9 @@ FlBhc3N3b3JkA
                                                         <state key="normal" title="Register">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="register:" destination="DOY-66-c6C" eventType="touchUpInside" id="gYY-HW-tr4"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -100,6 +106,9 @@ FlBhc3N3b3JkA
                                                         <state key="normal" title="Facebook">
                                                             <color key="titleColor" red="0.15180776793793982" green="0.086705359075790023" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="loginWithFacebook:" destination="DOY-66-c6C" eventType="touchUpInside" id="hfI-dj-LnY"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -135,6 +144,8 @@ FlBhc3N3b3JkA
                         <outlet property="btnLogin" destination="8S6-q7-E53" id="nq8-zR-WuJ"/>
                         <outlet property="btnRegister" destination="bK0-vH-XGM" id="gV2-Pr-Qe8"/>
                         <outlet property="scrollView" destination="SU5-31-61T" id="a4w-Cd-Cpa"/>
+                        <outlet property="tfEmail" destination="8C0-M8-4g9" id="ZGh-4e-vk6"/>
+                        <outlet property="tfPassword" destination="6Qx-9d-0NG" id="i9r-aV-9lx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ygs-jy-yFh" userLabel="First Responder" sceneMemberID="firstResponder"/>
