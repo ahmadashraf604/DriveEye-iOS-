@@ -8,14 +8,14 @@
 
 import UIKit
 
-class LeagueVController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class LeagueVController: UIViewController, UITableViewDataSource, UITableViewDelegate, LeagueDelegate {
     
     
     @IBOutlet var btnMenue: [UIButton]!
     @IBOutlet weak var tableView: UITableView!
     
     var leagueDetailsVC: LeagueDetailsVController!
-    var model = LeagueModel()
+    var presenter: LeaguePresenter!
     var leagues = [League]()
     
     
@@ -23,11 +23,8 @@ class LeagueVController: UIViewController, UITableViewDataSource, UITableViewDel
         super.viewDidLoad()
         
         leagueDetailsVC = self.storyboard?.instantiateViewController(withIdentifier: "leagueDetailsVC") as! LeagueDetailsVController
-        
-        model.getLeagues{ (leagues) in
-            self.leagues = leagues
-            self.tableView.reloadData()
-        }
+        presenter = LeaguePresenter(leagueVC: self)
+        presenter.getLeague()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -68,4 +65,12 @@ class LeagueVController: UIViewController, UITableViewDataSource, UITableViewDel
     @IBAction func joinExistingLeague(_ sender: UIButton) {
          performSegue(withIdentifier: "openAlertLeague", sender: self)
     }
+    
+    func setLeagues(leagues: [League]) {
+        self.leagues = leagues
+        self.tableView.reloadData()
+    }
+    
+    
+    
 }

@@ -8,10 +8,10 @@
 
 import UIKit
 
-class LeagueDetailsVController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class LeagueDetailsVController: UIViewController, UITableViewDelegate, UITableViewDataSource, LeagueDetailsDelegate {
     
     var league: League!
-    var model = LeagueModel()
+    var presenter: LeagueDetailsPresenter!
     var users = [UserLeague]()
     
     @IBOutlet weak var leagueNameLabel: UILabel!
@@ -22,17 +22,14 @@ class LeagueDetailsVController: UIViewController, UITableViewDelegate, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        presenter = LeagueDetailsPresenter(leagueVC: self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         leagueNameLabel.text = league.name
         leagueCodeLabel.text = league.code
         leagueOwnerLabel.text = String(league.ownerID)
-        model.getLeagueUsers(leagueID: league.leagueID, responseHandel: {(users) in
-            self.users = users
-            self.leagueTableView.reloadData()
-        })
+        presenter.getUsers(leagueID: league.leagueID)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -43,7 +40,6 @@ class LeagueDetailsVController: UIViewController, UITableViewDelegate, UITableVi
         return users.count
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "leagueDetailsCell", for: indexPath) as! LeagueTVCell
         let user = users[indexPath.row]
@@ -52,16 +48,9 @@ class LeagueDetailsVController: UIViewController, UITableViewDelegate, UITableVi
         cell.rankLabel.text =  String(user.rank)
         return cell
     }
-
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func setLeagueUsers(users: [UserLeague]) {
+        self.users = users
+        self.leagueTableView.reloadData()
     }
-    */
-
 }

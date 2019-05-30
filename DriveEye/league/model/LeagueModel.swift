@@ -26,7 +26,7 @@ class LeagueModel {
         }
     }
     
-    func getLeagueUsers(leagueID: Int, responseHandel: @escaping ([UserLeague]) -> Void ){
+    func getLeagueUsers(leagueID: Int, responseHandel:  @escaping ([UserLeague]) -> Void ){
         Alamofire.request(baseUrl + userLeague + String(leagueID)).responseJSON { (responseObject) -> Void in
             if responseObject.result.isSuccess {
                 let leagueDetailsResponse = try! JSONDecoder().decode(LeagueDetailsResponse.self, from: responseObject.data!)
@@ -39,6 +39,6 @@ class LeagueModel {
     
     func addLeague(leagueName: String, userID: Int, responseHandel: @escaping ([UserLeague]) -> Void){
         let parameters = ["name: " + leagueName, "ownerId: " + String(userID)]
-        Alamofire.request(.POST, baseUrl, parameters: parameters, encoding: .JSON)
+//        Alamofire.request(.POST, baseUrl, parameters: parameters, encoding: .JSON)
     }
 }
