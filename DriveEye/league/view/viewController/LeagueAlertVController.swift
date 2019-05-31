@@ -8,33 +8,25 @@
 
 import UIKit
 
-class LeagueAlertVController: UIViewController {
-    
-    
-    var model = LeagueModel()
-    
+class LeagueAlertVController: UIViewController, LeagueAlertDelegate {
+   
+    var presenter: LeagueAlertPresenter!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        presenter = LeagueAlertPresenter(leagueVC: self)
     }
     
     @IBAction func dismissView(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
+       self.dismissView()
     }
     
     @IBAction func actionHandel(_ sender: UIButton) {
-        
+        presenter.addLeague(leagueName: "ay league")
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+    func dismissView() {
+         self.dismiss(animated: true, completion: nil)
+    }
 }

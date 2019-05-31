@@ -11,9 +11,11 @@ import Alamofire
 
 class LeagueModel {
     
-    private let baseUrl = "https://driveeye.herokuapp.com/userLeague/"
-    private let subscribed = "subscribed/1"
-    private let userLeague = "getUsers/"
+    private let baseUrl = "https://driveeye.herokuapp.com/"
+    private let subscribed = "userLeague/subscribed/1"
+    private let userLeague = "userLeague/getUsers/"
+    private let addLeague = "league/add"
+    private let joinLeague = "userLeague/join/"
     
     func getLeagues(responseHandel: @escaping ([League]) -> Void){
         Alamofire.request(baseUrl + subscribed).responseJSON { (responseObject) -> Void in
@@ -37,8 +39,37 @@ class LeagueModel {
         }
     }
     
-    func addLeague(leagueName: String, userID: Int, responseHandel: @escaping ([UserLeague]) -> Void){
-        let parameters = ["name: " + leagueName, "ownerId: " + String(userID)]
-//        Alamofire.request(.POST, baseUrl, parameters: parameters, encoding: .JSON)
+    func addLeague(leagueName: String, userID: Int, responseHandel: @escaping (LeaguePostResponse) -> Void, errorHandel: @escaping (LeaguePostErrorResponse) -> Void){
+        let parameters: [String : Any] = ["name" : leagueName, "ownerId" : userID]
+        Alamofire.request(baseUrl + addLeague, method: .post, parameters: parameters)
+            .responseJSON { responseObject in
+                if responseObject.result.isSuccess {
+                    do{
+                        let response = try JSONDecoder().decode(LeaguePostResponse.self, from: responseObject.data!)
+                        responseHandel(response)
+                    }catch{
+                        responseHandel(LeaguePostResponse(status: false, league: nil))
+                        let response = try! JSONDecoder().decode(LeaguePostErrorResponse.self, from: responseObject.data!)
+                        errorHandel(response)
+                    }
+                }
+        }
+    }
+    
+    func joinLeague(leagueCode: String, userID: Int, responseHandel: @escaping (LeaguePostResponse) -> Void, errorHandel: @escaping (LeaguePostErrorResponse) -> Void){
+        let parameters: [String : Any] = ["leagueCode" : leagueCode]
+        Alamofire.request(baseUrl + joinLeague + String(userID), method: .post, parameters: parameters)
+            .responseJSON { responseObject in
+                if responseObject.result.isSuccess {
+                    do{
+                        let response = try JSONDecoder().decode(LeaguePostResponse.self, from: responseObject.data!)
+                        responseHandel(response)
+                    }catch{
+                        responseHandel(LeaguePostResponse(status: false, league: nil))
+                        let response = try! JSONDecoder().decode(LeaguePostErrorResponse.self, from: responseObject.data!)
+                        errorHandel(response)
+                    }
+                }
+        }
     }
 }
