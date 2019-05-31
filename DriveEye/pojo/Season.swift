@@ -1,15 +1,19 @@
+// This file was generated from JSON Schema using quicktype, do not modify it directly.
+// To parse the JSON, add this file to your project and do:
 //
-//  Season.swift
-//  DriveEye
-//
-//  Created by ashraf on 5/26/19.
-//  Copyright © 2019 java. All rights reserved.
-//
+//   let seasonResponse = try? newJSONDecoder().decode(SeasonResponse.self, from: jsonData)
 
 import Foundation
-class Season {
-    var endDate:String?
-    var startDate:String?
-    var users:[User]?
 
+// MARK: - Season
+struct Season: Codable {
+    let seasonID: Int
+    let startDate, endDate: String
+    let highScore, myScore, myRank: Int
+    
+    enum CodingKeys: String, CodingKey {
+        case seasonID = "seasonId"
+        case startDate, endDate, highScore, myScore, myRank
+    }
 }
+
