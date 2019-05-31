@@ -12,4 +12,6 @@ protocol LeagueDelegate {
     
     func setLeagues(leagues: [League])
     
+    func addLeague(league: League)
+    
 }

@@ -48,7 +48,6 @@ class LeagueModel {
                         let response = try JSONDecoder().decode(LeaguePostResponse.self, from: responseObject.data!)
                         responseHandel(response)
                     }catch{
-                        responseHandel(LeaguePostResponse(status: false, league: nil))
                         let response = try! JSONDecoder().decode(LeaguePostErrorResponse.self, from: responseObject.data!)
                         errorHandel(response)
                     }
@@ -65,7 +64,6 @@ class LeagueModel {
                         let response = try JSONDecoder().decode(LeaguePostResponse.self, from: responseObject.data!)
                         responseHandel(response)
                     }catch{
-                        responseHandel(LeaguePostResponse(status: false, league: nil))
                         let response = try! JSONDecoder().decode(LeaguePostErrorResponse.self, from: responseObject.data!)
                         errorHandel(response)
                     }

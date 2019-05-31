@@ -21,10 +21,17 @@ class LeagueAlertPresenter {
     
     func addLeague(leagueName: String) {
         leagueModel.addLeague(leagueName: leagueName, userID: self.userID, responseHandel: {(reponse) in
-            print(reponse.league?.leagueID)
-            self.leagueVC.dismissView()
+            self.leagueVC.dismissView(league: reponse.league)
         }, errorHandel: {(errorResponse) in
-            print(errorResponse.error)
+            self.leagueVC.printError(error: errorResponse.error)
+        })
+    }
+    
+    func joinLeague(leagueCode: String) {
+        leagueModel.joinLeague(leagueCode: leagueCode, userID: self.userID, responseHandel: {(reponse) in
+            self.leagueVC.dismissView(league: reponse.league)
+        }, errorHandel: {(errorResponse) in
+            self.leagueVC.printError(error: errorResponse.error)
         })
     }
 }

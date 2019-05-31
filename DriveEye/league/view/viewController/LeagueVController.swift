@@ -10,13 +10,13 @@ import UIKit
 
 class LeagueVController: UIViewController, UITableViewDataSource, UITableViewDelegate, LeagueDelegate {
     
-    
     @IBOutlet var btnMenue: [UIButton]!
     @IBOutlet weak var tableView: UITableView!
     
     var leagueDetailsVC: LeagueDetailsVController!
     var presenter: LeaguePresenter!
     var leagues = [League]()
+    private var action: ActionEnum = .add
     
     
     override func viewDidLoad() {
@@ -57,12 +57,15 @@ class LeagueVController: UIViewController, UITableViewDataSource, UITableViewDel
             })
         }
     }
+    
     @IBAction func addNewLeague(_ sender: UIButton) {
+        action = .add
         performSegue(withIdentifier: "openAlertLeague", sender: self)
     }
     
     
     @IBAction func joinExistingLeague(_ sender: UIButton) {
+        action = .join
          performSegue(withIdentifier: "openAlertLeague", sender: self)
     }
     
@@ -71,6 +74,17 @@ class LeagueVController: UIViewController, UITableViewDataSource, UITableViewDel
         self.tableView.reloadData()
     }
     
+    func addLeague(league: League) {
+        self.leagues.append(league)
+        self.tableView.reloadData()
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "openAlertLeague" {
+            let leageAlertVC = segue.destination as! LeagueAlertVController
+            leageAlertVC.leagueVC = self
+            leageAlertVC.action = action
+        }
+    }
     
 }

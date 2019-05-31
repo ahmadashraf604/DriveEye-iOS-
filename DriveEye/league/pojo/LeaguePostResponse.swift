@@ -10,7 +10,7 @@ import Foundation
 
 struct LeaguePostResponse: Codable {
     let status: Bool
-    let league: League?
+    let league: League
     
      enum CodingKeys: String, CodingKey {
         case status

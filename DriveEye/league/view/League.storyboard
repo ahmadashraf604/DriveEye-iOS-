@@ -10,6 +10,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--LeagueV Controller-->
         <scene sceneID="aM5-B6-F2V">
@@ -107,14 +112,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Tbt-J4-2CU" firstAttribute="bottom" secondItem="8nz-Hd-aab" secondAttribute="bottom" id="0ly-YU-I2d"/>
-                            <constraint firstItem="8nz-Hd-aab" firstAttribute="leading" secondItem="Tbt-J4-2CU" secondAttribute="leading" id="4HR-bL-fco"/>
-                            <constraint firstItem="Tbt-J4-2CU" firstAttribute="trailing" secondItem="k9s-qX-yUN" secondAttribute="trailing" constant="10" id="KuM-8P-i2n"/>
-                            <constraint firstItem="Tbt-J4-2CU" firstAttribute="trailing" secondItem="8nz-Hd-aab" secondAttribute="trailing" id="OuC-Y6-cz3"/>
-                            <constraint firstItem="8nz-Hd-aab" firstAttribute="top" secondItem="Tbt-J4-2CU" secondAttribute="top" id="uzQ-xH-bEh"/>
-                            <constraint firstItem="k9s-qX-yUN" firstAttribute="top" secondItem="Tbt-J4-2CU" secondAttribute="top" id="xWC-9G-CST"/>
+                            <constraint firstItem="Rge-Mc-35s" firstAttribute="bottom" secondItem="8nz-Hd-aab" secondAttribute="bottom" id="0ly-YU-I2d"/>
+                            <constraint firstItem="8nz-Hd-aab" firstAttribute="leading" secondItem="Rge-Mc-35s" secondAttribute="leading" id="4HR-bL-fco"/>
+                            <constraint firstItem="Rge-Mc-35s" firstAttribute="trailing" secondItem="k9s-qX-yUN" secondAttribute="trailing" constant="10" id="KuM-8P-i2n"/>
+                            <constraint firstItem="Rge-Mc-35s" firstAttribute="trailing" secondItem="8nz-Hd-aab" secondAttribute="trailing" id="OuC-Y6-cz3"/>
+                            <constraint firstItem="8nz-Hd-aab" firstAttribute="top" secondItem="Rge-Mc-35s" secondAttribute="top" id="uzQ-xH-bEh"/>
+                            <constraint firstItem="k9s-qX-yUN" firstAttribute="top" secondItem="Rge-Mc-35s" secondAttribute="top" id="xWC-9G-CST"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Tbt-J4-2CU"/>
+                        <viewLayoutGuide key="safeArea" id="Rge-Mc-35s"/>
                     </view>
                     <navigationItem key="navigationItem" id="W8k-h5-9g1">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="JcR-Er-s8s">
@@ -158,6 +163,12 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="error message" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsu-kp-zOq">
+                                        <rect key="frame" x="-87.5" y="76.5" width="0.0" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="1" green="0.12105407899999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZEk-L7-0ru">
                                         <rect key="frame" x="0.0" y="82" width="200" height="30"/>
                                         <subviews>
@@ -190,11 +201,17 @@
                         </subviews>
                         <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="yfw-Zg-Dax" firstAttribute="centerX" secondItem="Rpe-As-BF3" secondAttribute="centerX" id="Pop-HR-s8Y"/>
+                            <constraint firstItem="yfw-Zg-Dax" firstAttribute="centerX" secondItem="ci7-nc-U2l" secondAttribute="centerX" id="Pop-HR-s8Y"/>
                             <constraint firstItem="yfw-Zg-Dax" firstAttribute="centerY" secondItem="Rpe-As-BF3" secondAttribute="centerY" id="RvY-sP-KfQ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="QXc-2a-u9u"/>
+                        <viewLayoutGuide key="safeArea" id="ci7-nc-U2l"/>
                     </view>
+                    <connections>
+                        <outlet property="actionBtn" destination="X6E-Dv-Sqh" id="Zsu-ZA-0MT"/>
+                        <outlet property="errorLabel" destination="lsu-kp-zOq" id="aRa-3o-vRo"/>
+                        <outlet property="leagueDetailLabel" destination="bKY-bw-evC" id="4bz-Wz-omo"/>
+                        <outlet property="leagueNameTF" destination="smq-0T-wUa" id="C9f-Zp-ZNW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RM9-GR-H04" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -321,12 +338,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="t86-Bt-Cno" firstAttribute="trailing" secondItem="dcC-Vy-59M" secondAttribute="trailing" id="BhU-Yb-hg4"/>
-                            <constraint firstItem="dcC-Vy-59M" firstAttribute="top" secondItem="t86-Bt-Cno" secondAttribute="top" constant="5" id="XZA-ab-PaZ"/>
+                            <constraint firstItem="j9p-rt-2RB" firstAttribute="trailing" secondItem="dcC-Vy-59M" secondAttribute="trailing" id="BhU-Yb-hg4"/>
+                            <constraint firstItem="dcC-Vy-59M" firstAttribute="top" secondItem="j9p-rt-2RB" secondAttribute="top" constant="5" id="XZA-ab-PaZ"/>
                             <constraint firstAttribute="bottomMargin" secondItem="dcC-Vy-59M" secondAttribute="bottom" id="t41-8f-iW0"/>
-                            <constraint firstItem="dcC-Vy-59M" firstAttribute="leading" secondItem="t86-Bt-Cno" secondAttribute="leading" id="ysY-1t-m5r"/>
+                            <constraint firstItem="dcC-Vy-59M" firstAttribute="leading" secondItem="j9p-rt-2RB" secondAttribute="leading" id="ysY-1t-m5r"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="t86-Bt-Cno"/>
+                        <viewLayoutGuide key="safeArea" id="j9p-rt-2RB"/>
                     </view>
                     <connections>
                         <outlet property="leagueCodeLabel" destination="NoR-vW-Bi8" id="ujf-9o-oQM"/>

@@ -10,5 +10,7 @@ import Foundation
 
 protocol LeagueAlertDelegate {
     
-    func dismissView()
+    func dismissView(league: League)
+    
+    func printError(error: String)
 }
