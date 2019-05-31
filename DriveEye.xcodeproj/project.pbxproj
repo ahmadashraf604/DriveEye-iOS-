@@ -13,6 +13,7 @@
 		A30D7B3C229E8C5F00A63C3C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D7B3B229E8C5F00A63C3C /* UserModel.swift */; };
 		A30D7B3E229E8E0D00A63C3C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D7B3D229E8E0D00A63C3C /* User.swift */; };
 		A30D7B40229E99E300A63C3C /* LoginVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D7B3F229E99E300A63C3C /* LoginVCDelegate.swift */; };
+		A30DCDF922A14E7600589B87 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30DCDF822A14E7500589B87 /* Utils.swift */; };
 		A38D319E229BFE6600E0F493 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A38D319D229BFE6600E0F493 /* logo.png */; };
 		A38D31A0229C7A4A00E0F493 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D319F229C7A4A00E0F493 /* RegistrationViewController.swift */; };
 		DC47B15922943F69007E291E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC47B15822943F69007E291E /* AppDelegate.swift */; };
@@ -58,6 +59,7 @@
 		A30D7B3B229E8C5F00A63C3C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		A30D7B3D229E8E0D00A63C3C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A30D7B3F229E99E300A63C3C /* LoginVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVCDelegate.swift; sourceTree = "<group>"; };
+		A30DCDF822A14E7500589B87 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		A38D319D229BFE6600E0F493 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../logo.png; sourceTree = "<group>"; };
 		A38D319F229C7A4A00E0F493 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		BD9E0A92D73BE769A6EA4E65 /* Pods-DriveEye.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriveEye.release.xcconfig"; path = "Target Support Files/Pods-DriveEye/Pods-DriveEye.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,7 +135,6 @@
 				F020D5F7BEB1FA4FF48AFA84 /* Pods-DriveEyeUITests.debug.xcconfig */,
 				EED6363E88946D4DD4469FD4 /* Pods-DriveEyeUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -145,6 +146,7 @@
 				A30D7B3B229E8C5F00A63C3C /* UserModel.swift */,
 				A30D7B3D229E8E0D00A63C3C /* User.swift */,
 				A30D7B3F229E99E300A63C3C /* LoginVCDelegate.swift */,
+				A30DCDF822A14E7500589B87 /* Utils.swift */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -392,15 +394,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DriveEye/Pods-DriveEye-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 			);
@@ -414,15 +412,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-DriveEyeTests-checkManifestLockResult.txt",
 			);
@@ -436,15 +430,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-DriveEyeUITests-checkManifestLockResult.txt",
 			);
@@ -458,15 +448,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-DriveEye-checkManifestLockResult.txt",
 			);
@@ -493,6 +479,7 @@
 				A30D7B3E229E8E0D00A63C3C /* User.swift in Sources */,
 				DC47B15922943F69007E291E /* AppDelegate.swift in Sources */,
 				A30D7B40229E99E300A63C3C /* LoginVCDelegate.swift in Sources */,
+				A30DCDF922A14E7600589B87 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

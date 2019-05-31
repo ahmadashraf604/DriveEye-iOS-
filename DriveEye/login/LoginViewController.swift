@@ -8,7 +8,21 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, LoginVCProtocol {
+    
+    func showAlert(msg: String) {
+        
+        let alert = UIAlertController(title: "Oops!", message: msg, preferredStyle: UIAlertControllerStyle.alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+         
+            alert.dismiss(animated: true, completion: nil)
+            
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     
     let presenter = LoginPresenter(userModel: UserModel())
     
@@ -25,21 +39,24 @@ class LoginViewController: UIViewController {
         btnFacebook.layer.borderColor = UIColor.blue.cgColor
         btnFacebook.layer.borderWidth = 1.0
         
+        presenter.setVCDelegate(vcDelegate: self)
+        
         NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboard), name: Notification.Name.UIKeyboardWillHide, object: nil)
 
         NotificationCenter.default.addObserver(self, selector: #selector(handleKeyboard), name: Notification.Name.UIKeyboardWillChangeFrame, object: nil)
     }
     
     @IBAction func loginWithEmail(_ sender: Any) {
-        self.presenter.loginWithEmail(email: "a@a.com", password: "1111")
+        self.presenter.loginWithEmail(email: tfEmail.text!, password: tfPassword.text!)
         print("btn login is pressed with email: \(tfEmail.text!), password: \(tfPassword.text!)")
     }
     
     @IBAction func register(_ sender: Any) {
-        
+        //TODO: Go to the registration screen
     }
     
     @IBAction func loginWithFacebook(_ sender: Any) {
+        //TODO: login with facebook code here
     }
     
     @objc func handleKeyboard(notification: Notification){

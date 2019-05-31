@@ -12,16 +12,26 @@ import Alamofire
 class UserModel {
     let  url = URL(string: "https://driveeye.herokuapp.com/user/login")!
 
-    func login(email: String, password: String, closure: @escaping (_ error: Error?, _ obj: User) -> Void) -> Void{
+    func login(email: String, password: String, closure: @escaping (_ obj: User?) -> Void) {
         
         let parameters: [String: Any] = [
             "email" : email,
             "password" : password
         ]
-        
-        Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default)
+
+        Alamofire.request(url, method: .post, parameters: parameters)
             .responseJSON { response in
-                print(response)
+                
+                guard let data = response.data else { return }
+                do {
+                    let decoder = JSONDecoder()
+                    let user = try decoder.decode(User.self, from: data)
+                    
+                    closure(user)
+                    
+                } catch _ {
+                    closure(nil)
+                }
         }
         
 //        let user: User = User(userId: 1, firstName: "ahmed", lastName: "sallam", email: "ahmedsallamdd@gmail.com", password: "1232", birthdate: Date(), level: 5, carId: 3, cityId: 2)

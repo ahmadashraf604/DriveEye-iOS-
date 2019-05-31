@@ -1,22 +1,53 @@
+// This file was generated from JSON Schema using quicktype, do not modify it directly.
+// To parse the JSON, add this file to your project and do:
 //
-//  User.swift
-//  DriveEye
-//
-//  Created by Sallam on 5/29/19.
-//  Copyright © 2019 java. All rights reserved.
-//
+//   let user = try? newJSONDecoder().decode(User.self, from: jsonData)
 
 import Foundation
 
-struct User {
-    var userId: Int
-    var firstName: String
-    var lastName: String
-    var email: String
-    var password: String
-    var birthdate: Date
-    var level: Int
-//    var image: NSData
-    var carId: Int
-    var cityId: Int
+// MARK: - User
+struct User: Codable {
+    let status: Bool
+    let response: Response
 }
+
+// MARK: - Response
+struct Response: Codable {
+    let userID: Int
+    let firstName, lastName, email, birthdate: String
+    let level: Int
+    let image: JSONNull?
+    
+    enum CodingKeys: String, CodingKey {
+        case userID = "userId"
+        case firstName, lastName, email, birthdate, level, image
+    }
+}
+
+// MARK: - Encode/decode helpers
+
+class JSONNull: Codable, Hashable {
+    
+    public static func == (lhs: JSONNull, rhs: JSONNull) -> Bool {
+        return true
+    }
+    
+    public var hashValue: Int {
+        return 0
+    }
+    
+    public init() {}
+    
+    public required init(from decoder: Decoder) throws {
+        let container = try decoder.singleValueContainer()
+        if !container.decodeNil() {
+            throw DecodingError.typeMismatch(JSONNull.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for JSONNull"))
+        }
+    }
+    
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.singleValueContainer()
+        try container.encodeNil()
+    }
+}
+
